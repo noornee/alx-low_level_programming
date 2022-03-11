@@ -1,25 +1,32 @@
 #include <stdio.h>
-
 /**
- * main - mainn
- * Return: something
+ * main - main
+ * Return: all possible different combinations of two digits.
  */
 int main(void)
 {
-	int i;
-	int n;
+	int i, j, k;
 
-	i = n = 48;
+	i = 0;
 
-	while (i < 58 && n < 58)
+	while (i < 100)
 	{
-		putchar(i);
-		putchar(n);
-		putchar(',');
-		putchar(' ');
-		n++;
+		j = i % 10;
+		k = i / 10;
+
+		if (k < j)
+		{
+			putchar(k + '0');
+			putchar(j + '0');
+			if (i != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+
+		i++;
 	}
-
+	putchar('\n');
 	return (0);
-
 }
