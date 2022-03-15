@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int num[10] = { 95, 112, 117, 116, 99, 104, 97, 114 };
+	char num[8] = "_putchar";
+
 	int i;
 
 	for (i = 0; i < 8; i++)
