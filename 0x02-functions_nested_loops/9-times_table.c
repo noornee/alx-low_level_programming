@@ -16,11 +16,11 @@ void times_table(void)
 			int mul = a * b;
 
 			printf("%d", mul);
-			__putchar(',');
-			__putchar(' ');
+			_putchar(',');
+			_putchar(' ');
 
 		}
-		__putchar('\n');
+		_putchar('\n');
 
 	}
 
