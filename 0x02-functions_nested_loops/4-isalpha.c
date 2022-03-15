@@ -16,6 +16,6 @@ int _isalpha(int c)
 			if (c == i || c == j)
 				return (1);
 			return (0);
-
+		}
 	}
 }
