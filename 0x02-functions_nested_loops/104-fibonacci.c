@@ -13,13 +13,13 @@ int main(void)
 	n2 = 1;
 	count = 0;
 
-	while (count < 98)
+	while (count < 85)
 	{
 		nth = n1 + n2;
 		n1 = n2;
 		n2 = nth;
 		count += 1;
-		if (count != 98)
+		if (count != 85)
 			printf("%lu, ", n1);
 		else
 			printf("%lu\n", n1);
