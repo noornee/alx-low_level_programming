@@ -1,32 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints out the sum of the even fibonacci sequence
+ * main - prints out the first 50 fibonacci numbers starting from 1 and 2
  * whose values do not exceed 4,000,000
  * Return: 0
  */
 int main(void)
 {
-	int n1, n2, total;
+	long int n1, n2, nth, count;
 
 	n1 = 1;
-	n2 = 2;
-	total = 0;
+	n2 = 1;
+	count = 0;
 
-	while (n1 <= 4000000)
+	while (count < 50)
 	{
-		int nth = n1 + n2;
-
+		nth = n1 + n2;
 		n1 = n2;
 		n2 = nth;
+		count += 1;
+		if (n1 != 20365011074)
+			printf("%ld, ", n1);
+		else
+			printf("%ld\n", n1);
 
-		if (n1 % 2 == 0)
-		{
-			total += n1;
-		}
 	}
-
-	printf("%d\n", total);
 
 	return (0);
 }
