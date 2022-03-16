@@ -24,6 +24,12 @@ void times_table(void)
 				_putchar(mul + '0');
 
 			}
+			else if (mul >= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(mul + '0');
+			}
 
 		}
 		_putchar('\n');
