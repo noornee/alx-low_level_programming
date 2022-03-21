@@ -5,6 +5,8 @@
 int _putchar(char);
 void reset_to_98(int *n);
 void rev_string(char *s);
+int _strlen(char *s);
+void _puts(char *str)
 void puts2(char *str);
 void puts_half(char *str);
 void print_array(int *a, int n);
