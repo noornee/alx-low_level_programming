@@ -16,18 +16,20 @@ void puts_half(char *str)
 		mid = (len - 1) / 2;
 
 		for (i = mid; i < len; i++)
+		{
 			_putchar(str[i]);
-			_putchar('\n');
+		}
 	}
 	else
 	{
 		mid = len / 2;
 
 		for (i = mid; i < len; i++)
+		{
 			_putchar(str[i]);
-			_putchar('\n');
+		}
 	}
 
-
+	_putchar('\n');
 
 }
