@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * rev_string - reverses a string
  * @s: a pointer to type char
@@ -8,7 +9,7 @@ void rev_string(char *s)
 {
 	int i, len, temp;
 
-	len = _strlen(s);
+	len = strlen(s);
 
 	for (i = 0; i < len / 2; i++)
 	{
