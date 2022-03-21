@@ -1,3 +1,4 @@
+#include "main.h"
 #include <unistd.h>
 #include <string.h>
 /**
@@ -8,5 +9,5 @@
 void _puts(char *str)
 {
 	write(1, str, strlen(str));
-	write(1, "\n", 2);
+	_putchar('\n');
 }
