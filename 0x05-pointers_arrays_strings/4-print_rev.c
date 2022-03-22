@@ -5,16 +5,6 @@
  * @s: a pointer to char
  * Return: void.
  */
-void print_rev(char *s);
-int main(void)
-{
-    char *str;
-
-    str = "holberton!";
-    print_rev(str);
-    return (0);
-}
-
 void print_rev(char *s)
 {
 	int i, len;
