@@ -7,3 +7,5 @@
 | [0x04-more_functions_nested_loops](https://github.com/noornee/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops) | more_functions_nested_loops |
 | [0x05-pointers_arrays_strings](https://github.com/noornee/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings) | pointers_arrays_strings |
 
+
+p.s. [linter: betty](https://github.com/holbertonschool/Betty)
