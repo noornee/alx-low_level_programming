@@ -5,7 +5,7 @@
  */
 char *leet(char *str)
 {
-	int i, l, n;
+	int i, j;
 
 	char letters[] = {'a', 'e', 'o', 't', 'l'};
 	char num[] = {'4', '3', '0', '7', '1'};
@@ -13,15 +13,11 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (l = 0, n = 0; letters[l] != '\0' && num[n] != '\0'; l++, n++)
-			if ((str[i] == letters[l]) || (str[i] == letters[l] - 32))
+		for (j = 0; j < 5; j++)
+			if ((str[i] == letters[j]) || (str[i] == letters[j] - 32))
 			{
-
-				letters[l] = num[n];
-				str[i] = letters[l];
-
+				str[i] = num[j];
 			}
-
 	}
 	return (str);
 }
