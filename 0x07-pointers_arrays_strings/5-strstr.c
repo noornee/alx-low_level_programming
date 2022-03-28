@@ -11,7 +11,6 @@ char *_strstr(char *haystack, char *needle)
 	{
 		haystack++;
 	}
-	printf("%c", haystack);
 	if (*haystack == *needle)
 		return (haystack);
 	return ('\0');
