@@ -39,7 +39,6 @@ char *str_concat(char *s1, char *s2)
 	for (b = 0; b < j; b++)
 		str[a + b] = s2[b];
 
-	free(str);
 	return (str);
 
 }
