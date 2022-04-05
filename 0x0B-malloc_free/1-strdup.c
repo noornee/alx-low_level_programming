@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
  * ...which contains a copy of @str.
@@ -12,7 +11,9 @@ char *_strdup(char *str)
 	char *copy;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; str[i] != '\0'; i++)
 		;
@@ -20,8 +21,9 @@ char *_strdup(char *str)
 	copy = malloc(sizeof(char) * (i + 1));
 
 	if (copy == NULL)
-		free(copy);
+	{
 		return (NULL);
+	}
 
 	for (j = 0; j <= i; j++)
 		copy[j] = str[j];
