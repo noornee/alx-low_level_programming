@@ -1,21 +1,13 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - check the code
+ * string_nconcat - concatenate two string
+ * @s1: first string
+ * @s2: second
+ * @n: number of string to be concatenated 
  *
- * Return: Always 0.
+ * Return: concatenated string or NULL if it fails.
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j;
