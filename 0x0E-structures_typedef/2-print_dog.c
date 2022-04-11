@@ -6,23 +6,21 @@
  * @d: dog struct
  * Return: void.
  */
-void print_dog(struct dog *d);
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    struct dog my_dog;
-
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    print_dog(&my_dog);
-    return (0);
-}
-
 void print_dog(struct dog *d)
 {
-	printf("Name: %s\nAge: %f\nOwner: %s\n", (*d).name, (*d).age, (*d).owner);
+	if (!(*d).name)
+		printf("Name: (nil)\n");
+	else
+		printf("Name: %s\n", (*d).name);
+
+	if (!(*d).age)
+		printf("Age: (nil)\n");
+	else
+		printf("Age: %f\n", (*d).age);
+
+	if (!(*d).owner)
+		printf("Owner: (nil)\n");
+	else
+		printf("Owner: %s\n", (*d).owner);
+
 }
