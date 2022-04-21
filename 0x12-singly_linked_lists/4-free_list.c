@@ -1,6 +1,11 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * free_list - free a list
+ * @head: linked list head
+ * Return: void
+ */
 void free_list(list_t *head)
 {
 	list_t *current;
